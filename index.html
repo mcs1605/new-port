@@ -2,8 +2,9 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link href="./fontawesome/css/all.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -22,11 +23,48 @@
     <div class="container">
 
         <header class="header"></header>
-        <section class="section1" id="sobre"></section>
-        <section class="section2" id="habilidades"></section>
-        <section class="section3"></section>
-        <section class="section4"></section>
-        <footer class="footer" id="formacao"></footer>
+ 
+        <section class="section1-apresentacao"></section>
+
+        <section class="section2-projetos">
+            <div class="pages-internet">
+                <div id="page1"></div>
+                <div id="page2"></div>
+                <div id="page3"></div>
+                <div id="page4"></div>
+            </div>
+        </section>
+
+        <section class="section3-experiencia"></section>
+
+        <section class="section4-formacoes">
+            <div class="formacoes">
+                <a id="formacao1" href="#"><img src="./img/udemyLogo.png" alt=""></a>
+                <a id="formacao2" href="#"><img src="./img/ampliLogo.png" alt=""></a>
+                <a id="formacao3" href="#"><img src="./img/fatecieLogo.png" alt=""></a>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <section class="contact">
+                <div id="left-contact">
+                    <form action="">
+                        <label for="name">Nome: </label><br>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="email">Digite seu email: </label><br>
+                        <input type="email" id="email" name="email"><br>
+                        <textarea name="mensagem" placeholder="Digite sua mensagem" rows="4" cols="26" style="font-size:25px"></textarea><br>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+
+                <div id="right-contact">
+                    <i class="fa-solid fa-at"></i> marcospaulo@gmail.com<br><br>
+                    <i class="fa-solid fa-phone"></i> 16 9**** ****<br><br>
+                    <i class="fa-brands fa-github"></i> github.io
+                </div>
+            </section>
+        </footer>
     </div>
 </body>
 </html>

@@ -23,7 +23,7 @@
 }
 
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(126, 126, 126);
     color: white;
     display: flex;
     flex-direction: column;
@@ -36,6 +36,7 @@ nav {
     width: 1225px;
     height: 60px;
     position: fixed;
+    flex-grow: 0;
 }
 
 nav ul {
@@ -64,6 +65,7 @@ a {
 
 .container {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     align-items: center;
     margin-top: 60px;
@@ -77,7 +79,7 @@ a {
     background-position: center;
 }
 
-.section1 {
+.section1-apresentacao {
     background-image: url(../img/secao1.png);
     width: 100vw;
     height: 555px;
@@ -85,15 +87,41 @@ a {
     background-position: center;
 }
 
-.section2 {
+.section2-projetos {
     background-image: url(../img/secao2.png);
     width: 100vw;
     height: 495px;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    flex-direction:row;
 }
 
-.section3 {
+.pages-internet {
+    width: 100vw;
+    height: 495px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#page1, #page2, #page3, #page4 {
+    background-image: url(../img/page.png);
+    width: 260px;
+    height: 243px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 7em 1em 0 1em;
+}
+
+#page1:hover, #page2:hover, #page3:hover, #page4:hover {
+    opacity: 0.7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.section3-experiencia {
     background-image: url(../img/secao3.png);
     width: 100vw;
     height: 570px;
@@ -101,18 +129,83 @@ a {
     background-position: center;
 }
 
-.section4 {
+.section4-formacoes {
     background-image: url(../img/secao4.png);
     width: 100vw;
     height: 513px;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.formacoes {
+    width: 100vw;
+    height: 200px;
+    margin: 13em 0 0 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#formacao1, #formacao2, #formacao3 {
+    margin: 0 30px;
+    width: 200px;
+    height: 192px;
+}
+
+#formacao1:hover {
+    opacity: 0.7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 4em;
+}
+
+#formacao2:hover {
+    opacity: 0.7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 4em;
+}
+
+#formacao3:hover {
+    opacity: 0.7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 4em;
 }
 
 .footer {
     background-image: url(../img/rodape.png);
-    width: 100vw;
+    min-width: 100vw;
     height: 325px;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.contact {
+    width: 750px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    margin: 1em 10em 0 0;
+}
+
+#left-contact {
+    width: 387px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    position: static;
+}
+
+#right-contact {
+    width: 290px;
+    height: 190px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    position: static;
+    margin: 2em 0 0 4em;
 }
